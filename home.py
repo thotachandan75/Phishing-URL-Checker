@@ -9,6 +9,28 @@ import numpy as np
 
 
 def main():
+    style = """
+    #MainMenu {
+        visibility: hidden;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+    """
+    st.markdown(style, unsafe_allow_html=True)
     st.title("Home")
 
     url = st.text_input("Please enter the website URl", "https://www.google.com")
