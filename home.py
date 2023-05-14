@@ -3,9 +3,6 @@ import model_implementation
 import pickle
 import tensorflow as tf
 import numpy as np
-# import warnings
-#
-# warnings.filterwarnings("ignore")
 
 
 def main():
