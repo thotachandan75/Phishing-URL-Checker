@@ -39,6 +39,3 @@ def main():
                   ' target="_blank" class="github_link" >Github Link</a>'
     st.markdown(github_link, unsafe_allow_html=True)
     st.write("Thank You for visiting our Web app, feel free to contact us")
-
-if __name__ == "__main__":
-    main()
