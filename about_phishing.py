@@ -2,28 +2,8 @@ import streamlit as st
 
 
 def main():
-    style = """
-    #MainMenu {
-        visibility: hidden;
-    }
-
-    h1 {
-        text-align: center;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    h3 {
-        text-align: center;
-    }
-
-    footer {
-        visibility: hidden;
-    }
-    """
-    st.markdown(style, unsafe_allow_html=True)
+    page_markdown = open("general_style.css", "r").read()
+    st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
     
     st.title("About Phishing")
 
