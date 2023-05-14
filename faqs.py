@@ -3,6 +3,29 @@ import streamlit.components.v1 as components
 
 
 def main():
+    style = """
+    #MainMenu {
+        visibility: hidden;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+    """
+    st.markdown(style, unsafe_allow_html=True)
+    
     columns = st.columns(2)
     with columns[0]:
         st.title("Frequently Asked Questions")
