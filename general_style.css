@@ -6,13 +6,12 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     text-align: center;
 }
 
-div [data-testid="stImage"] {
-    width: 75%;
-    margin: auto;
+h3 {
+    text-align: center;
 }
 
 footer {
