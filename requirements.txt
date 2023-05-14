@@ -1,6 +1,7 @@
 altair==4.2.2
 beautifulsoup4==4.11.2
 bs4==0.0.1
+catboost==1.1.1
 dnspython==2.3.0
 googlesearch-python==1.2.3
 html5lib==1.1
