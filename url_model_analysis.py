@@ -5,6 +5,9 @@ import plotly.express as px
 
 
 def main():
+    page_markdown = open("general_style.css", "r").read()
+    st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
+    
     st.title("URL Model analysis")
 
     st.write(f"We have used the dataset from the website which contains about 84 features which can be used to "
@@ -32,7 +35,7 @@ def main():
     st.write("Preprocessing the dataset would insure better results and less training time for building the models. "
              "We have performed many preprocessing steps such as balancing the dataset using SMOTE Analysis, "
              "Dimensionality reduction using PCA, Data Transformation and Normalization, Feature Selection, "
-             "etc.. Now the preprocessed dataset consists of 31 High correlated features which can be used for model "
+             "etc.. Now the preprocessed dataset consists of 28 High correlated features which can be used for model "
              "building")
     st.write("")
 
