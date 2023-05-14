@@ -11,7 +11,7 @@ def main():
     
     st.title("Home")
 
-    url = st.text_input("Please Enter the Website URL in the below text box")
+    url = st.text_input("Please Enter complete URL of the website to check its legitimacy")
     if url != "":
         result = model_implementation.main(url)
         st.write(result)
