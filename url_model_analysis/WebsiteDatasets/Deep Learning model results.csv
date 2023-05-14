@@ -1,0 +1,6 @@
+Model,Accuracy,Precision,Recall,F1 Score
+Artificial Neural Network,0.951,0.948,0.967,0.957
+Multilayer Perception,0.964,0.959,0.978,0.968
+Recurrent Neutral Network,0.966,0.966,0.976,0.971
+Long Short Term Network,0.969,0.969,0.977,0.973
+Gated Recurrent Units,0.969,0.971,0.974,0.972
