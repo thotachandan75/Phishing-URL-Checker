@@ -57,7 +57,29 @@ def form_callback(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10):
 
 
 def main():
+        style = """
+    #MainMenu {
+        visibility: hidden;
+    }
 
+    h1 {
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+    """
+    st.markdown(style, unsafe_allow_html=True)
+    
     st.title("Feedback Form")
 
     sub, an1, an2, an3, an4, an5, an6, an7, an8, an9, an10 = form_function()
