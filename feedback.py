@@ -57,7 +57,7 @@ def form_callback(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10):
 
 
 def main():
-        style = """
+    style = """
     #MainMenu {
         visibility: hidden;
     }
