@@ -38,7 +38,7 @@ def main():
     github_link = '<a href="https://github.com/chandanthota75/Phishing_url_checker"' \
                   ' target="_blank" class="github_link" >Github Link</a>'
     st.markdown(github_link, unsafe_allow_html=True)
-    st.subheader("Thank You for visiting our Web app, feel free to contact us")
+    st.write("Thank You for visiting our Web app, feel free to contact us")
 
 if __name__ == "__main__":
     main()
