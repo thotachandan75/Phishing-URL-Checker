@@ -11,7 +11,7 @@ def main():
     
     st.title("Home")
 
-    url = st.text_input("Please enter the website URl", "https://www.google.com")
+    url = st.text_input("Please Enter the Website URL in the below text box")
     result = model_implementation.main(url)
     st.write(result)
 
