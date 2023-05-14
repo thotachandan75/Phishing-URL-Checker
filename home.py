@@ -12,8 +12,9 @@ def main():
     st.title("Home")
 
     url = st.text_input("Please Enter the Website URL in the below text box")
-    result = model_implementation.main(url)
-    st.write(result)
+    if url != "":
+        result = model_implementation.main(url)
+        st.write(result)
 
     st.write("The source code for the website is present in the below github link")
     github_link = '<a href="https://github.com/chandanthota75/Phishing-URL-Checker"' \
