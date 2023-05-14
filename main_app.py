@@ -23,29 +23,9 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded",
     )
-    
-    style = """
-    #MainMenu {
-        visibility: hidden;
-    }
 
-    h1 {
-        text-align: center;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    h3 {
-        text-align: center;
-    }
-
-    footer {
-        visibility: hidden;
-    }
-    """
-    st.markdown(style, unsafe_allow_html=True)
+    page_markdown = open("general_style.css", "r").read()
+    st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
 
     st.sidebar.title("Phishing URL Checker")
     st.write("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
