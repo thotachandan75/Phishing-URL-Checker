@@ -58,28 +58,8 @@ phone = ["9870309656", "7676253668", "7981060514", "7981860686", "7016210624", "
 
 
 def main():
-    style_page = """
-    #MainMenu {
-        visibility: hidden;
-    }
-
-    h1 {
-        text-align: center;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    h3 {
-        text-align: center;
-    }
-
-    footer {
-        visibility: hidden;
-    }
-    """
-    st.markdown(style_page, unsafe_allow_html=True)
+    page_markdown = open("general_style.css", "r").read()
+    st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
     
     columns = st.columns([0.75, 0.25])
     with columns[0]:
