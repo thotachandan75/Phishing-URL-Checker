@@ -16,6 +16,14 @@ def image_to_bytes(image_path):
 
 
 def main():
+    st.set_page_config(
+        page_title="Phishing URL Checker",
+        page_icon=f"data:image/png;"
+                  f"base64,{image_to_bytes('main_app/page_icon.png')}",
+        layout="wide",
+        initial_sidebar_state="expanded",
+    )
+    
     style = """
     #MainMenu {
         visibility: hidden;
@@ -38,14 +46,6 @@ def main():
     }
     """
     st.markdown(style, unsafe_allow_html=True)
-    
-    st.set_page_config(
-        page_title="Phishing URL Checker",
-        page_icon=f"data:image/png;"
-                  f"base64,{image_to_bytes('main_app/page_icon.png')}",
-        layout="wide",
-        initial_sidebar_state="expanded",
-    )
 
     st.sidebar.title("Phishing URL Checker")
     st.write("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
