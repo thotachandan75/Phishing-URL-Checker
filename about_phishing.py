@@ -10,7 +10,11 @@ def main():
     h1 {
         text-align: center;
     }
-
+    
+    h2 {
+        text-align: center;
+    }
+    
     h3 {
         text-align: center;
     }
