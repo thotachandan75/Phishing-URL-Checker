@@ -28,8 +28,6 @@ def main():
         st.subheader("After Preprocessing Dataset")
         after_preprocess = pa.read_csv("url_model_analysis/WebsiteDatasets/phishing_after_preprocess.csv")
         st.dataframe(data=after_preprocess.set_index("id"))
-        
-
 
     st.write("")
     st.write("Preprocessing the dataset would insure better results and less training time for building the models. "
