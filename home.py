@@ -45,7 +45,7 @@ def main():
     st.write("To create a spoofed website, attackers may use techniques such as domain spoofing, where they register a domain name that is similar to the legitimate website's domain name, or they may use website cloning software to replicate the appearance and functionality of the legitimate website.")
     st.write("It's important to be cautious when entering personal information online and to always check the legitimacy of a website before entering any sensitive data. One way to do this is to look for the padlock icon in the browser's address bar, which indicates that the website is using a secure connection (HTTPS) and has a valid security certificate. Additionally, be wary of emails or messages that ask you to enter personal information or click on links, especially if they seem suspicious or out of the ordinary.")
     
-    st.subheader('This Webapp is curriculum-based project, which is constructed as a part of "Engineering Project in Community Services" by the students of VIT Bhopal The Key contributors for the project are')
+    st.subheader('This Webapp is curriculum-based project, which is constructed as a part of "Engineering Project in Community Services" by the students of VIT Bhopal.')
     st.write("The source code for the website is present in the below github link")
     github_link = '<a href="https://github.com/chandanthota75/Phishing-URL-Checker"' \
                   ' target="_blank" class="github_link" >Github Link</a>'
