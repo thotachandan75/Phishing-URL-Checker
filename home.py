@@ -19,9 +19,7 @@ def main():
     st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
     
     st.title("Home")
-    
-    st.warning("Below model will only accept complete URL only. Please check the URL format before passing it to the URL input field below")
-    
+
     url = st.text_input("Please enter complete URL of the website to check its legitimacy")
     if url == "":
         pass
