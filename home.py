@@ -67,4 +67,4 @@ def main():
     
     st.subheader('This Webapp is curriculum-based project, which is constructed as a part of "Engineering Project in Community Services" by the students of VIT Bhopal.')
     github_link = '<a href="https://github.com/chandanthota75/Phishing-URL-Checker" target="_blank" class="github_link" >Github</a>'
-    st.write("The source code for the website is present in {st.markdown(github_link, unsafe_allow_html=True)}, Thank You for visiting our Web app, feel free to contact us")
+    st.write(f"The source code for the website is present in {st.markdown(github_link, unsafe_allow_html=True)}, Thank You for visiting our Web app, feel free to contact us")
