@@ -1,13 +1,10 @@
 import streamlit as st
-import main_app
-
 
 def main():
     page_markdown = open("general_style.css", "r").read()
     st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
     
-    st.image(f"data:image/png;"
-         f"base64,{main_app.image_to_bytes('main_app/about_phishing.png')}")
+    st.title("About Phishing")
 
     st.write("Phishing is a type of online scam in which cyber criminals use fraudulent emails, text, messages, "
              "or websites to trick people into providing sensitive information such as passwords, credit card "
