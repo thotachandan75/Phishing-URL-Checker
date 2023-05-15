@@ -51,12 +51,14 @@ def main():
     
     st.write("Spoofed websites are fake websites that are designed to mimic the appearance and functionality of a legitimate website. These websites are created by cybercriminals with the intention of stealing personal information, such as login credentials, credit card numbers, and other sensitive data from unsuspecting users.")
     st.write("Spoofed websites are often used in phishing attacks, where users receive emails or other messages that direct them to the fake website. The email or message may contain a link that appears to be legitimate, but actually leads to the fake website. Once the user visits the spoofed website, they are prompted to enter their login credentials or other personal information, which is then captured by the attackers.")
+    st.write("Our Phishing URL Checker model utilizes advanced machine, ensemble and deep learning techniques to analyze various features and patterns within the provided URLs. By training on a diverse dataset consisting of both legitimate and spoofed URLs, our model has learned to identify subtle indicators and red flags that can help distinguish between the two.")
+    st.Subheader("Key Features of this model")
+    st.write("")
     
-    st.image(f"data:image/png;"
-             f"base64,{main_app.image_to_bytes('home/spoofing_explained_image.png')}")
+    st.subheader("Use Cases of our model")
+    st.write("Our Phishing URL Checker has various applications in both personal and organizational settings. It can be integrated into web browsers, email clients, or security software to provide real-time protection against phishing attacks. By alerting users or administrators about potentially malicious URLs, our model helps mitigate the risks associated with accessing spoofed websites.")
     
-    st.write("To create a spoofed website, attackers may use techniques such as domain spoofing, where they register a domain name that is similar to the legitimate website's domain name, or they may use website cloning software to replicate the appearance and functionality of the legitimate website.")
-    st.write("It's important to be cautious when entering personal information online and to always check the legitimacy of a website before entering any sensitive data. One way to do this is to look for the padlock icon in the browser's address bar, which indicates that the website is using a secure connection (HTTPS) and has a valid security certificate. Additionally, be wary of emails or messages that ask you to enter personal information or click on links, especially if they seem suspicious or out of the ordinary.")
+    st.write("In an era where online security is of paramount importance, our Phishing URL Checker serves as a valuable tool to safeguard against phishing attacks. By harnessing the power of machine, ensemble and deep learning, we aim to provide an effective and scalable solution to protect users from falling victim to fraudulent websites.")
     
     st.subheader('This Webapp is curriculum-based project, which is constructed as a part of "Engineering Project in Community Services" by the students of VIT Bhopal.')
     st.write("The source code for the website is present in the below github link")
