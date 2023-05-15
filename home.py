@@ -54,9 +54,9 @@ def main():
             
         st.write("Spoofed websites are fake websites that are designed to mimic the appearance and functionality of a legitimate website. These websites are created by cybercriminals with the intention of stealing personal information, such as login credentials, credit card numbers, and other sensitive data from unsuspecting users.")
         st.write("Spoofed websites are often used in phishing attacks, where users receive emails or other messages that direct them to the fake website. The email or message may contain a link that appears to be legitimate, but actually leads to the fake website. Once the user visits the spoofed website, they are prompted to enter their login credentials or other personal information, which is then captured by the attackers.")
+        st.write("Our Phishing URL Checker model utilizes advanced machine, ensemble and deep learning techniques to analyze various features and patterns within the provided URLs. By training on a diverse dataset consisting of both legitimate and spoofed URLs, our model has learned to identify subtle indicators and red flags that can help distinguish between the two.")
     with columns[1]:
         st.image(f"data:image/png; base64,{main_app.image_to_bytes('home/spoofing.png')}")
-    st.write("Our Phishing URL Checker model utilizes advanced machine, ensemble and deep learning techniques to analyze various features and patterns within the provided URLs. By training on a diverse dataset consisting of both legitimate and spoofed URLs, our model has learned to identify subtle indicators and red flags that can help distinguish between the two.")
     
     st.subheader("Key Features of this model")
     st.write("Feature Extraction:- Our model begins by extracting relevant features from the input URL. These features encompass various aspects such as domain information, URL structure, statistical attributes, content analysis, and historical data. By considering a wide range of features, our model captures both explicit and implicit characteristics that play a role in determining URL legitimacy.")
