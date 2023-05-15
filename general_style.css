@@ -14,6 +14,12 @@ h3 {
     text-align: center;
 }
 
+div [data-testid="stImage"] {
+    width: 75%;
+    align: center;
+    margin: auto;
+}
+
 footer {
     visibility: hidden;
 }
