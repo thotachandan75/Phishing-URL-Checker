@@ -20,7 +20,11 @@ def main():
     st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
     
     st.title("Home")
-
+    
+    st.write("Welcome to our Phishing URL Checker website! With the increasing sophistication of cyber threats and the rise of phishing attacks, it has become crucial to differentiate between legitimate websites and their malicious counterparts. Our model aims to address this challenge by providing an automated solution to detect whether a given URL is legitimate or a spoofed website.")
+    
+    st.write("You can use this model by typing or pasting the suspected URL in the below text input field, Please verify that tthe the complete URL of the website is typed/pasted in the input field")
+    
     url = st.text_input("Please enter complete URL of the website to check its legitimacy")
     if url == "":
         pass
