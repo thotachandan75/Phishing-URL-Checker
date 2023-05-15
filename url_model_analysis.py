@@ -21,7 +21,7 @@ def main():
    
     columns = st.columns(2)
     with columns[0]:
-         st.subheader("Before Preprocessing Dataset")
+        st.subheader("Before Preprocessing Dataset")
         before_preprocess = pa.read_csv("url_model_analysis/WebsiteDatasets/phishing_before_preprocess.csv")
         st.dataframe(data=before_preprocess)
     with columns[1]:
