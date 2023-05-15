@@ -66,8 +66,5 @@ def main():
     st.write("In an era where online security is of paramount importance, our Phishing URL Checker serves as a valuable tool to safeguard against phishing attacks. By harnessing the power of machine, ensemble and deep learning, we aim to provide an effective and scalable solution to protect users from falling victim to fraudulent websites.")
     
     st.subheader('This Webapp is curriculum-based project, which is constructed as a part of "Engineering Project in Community Services" by the students of VIT Bhopal.')
-    st.write("The source code for the website is present in the below github link")
-    github_link = '<a href="https://github.com/chandanthota75/Phishing-URL-Checker"' \
-                  ' target="_blank" class="github_link" >Github Link</a>'
-    st.markdown(github_link, unsafe_allow_html=True)
-    st.write("Thank You for visiting our Web app, feel free to contact us")
+    github_link = '<a href="https://github.com/chandanthota75/Phishing-URL-Checker" target="_blank" class="github_link" >Github</a>'
+    st.write("The source code for the website is present in {st.markdown(github_link, unsafe_allow_html=True)}, Thank You for visiting our Web app, feel free to contact us")
