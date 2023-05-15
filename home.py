@@ -21,8 +21,8 @@ def main():
     st.title("Home")
     
     url = st.text_input("Please enter complete URL of the website to check its legitimacy")
-    if url != "":
-        break
+    if url == "":
+        pass
     elif is_complete_url(url):
         result = model_implementation.main(url)
         if result == "Legetimate":
