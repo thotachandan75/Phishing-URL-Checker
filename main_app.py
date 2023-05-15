@@ -28,7 +28,7 @@ def main():
     st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
 
     st.sidebar.title("Phishing URL Checker")
-    st.sidebar.subheader("")
+    st.sidebar.image("f"data:image/png;base64,{image_to_bytes('main_app/sidebar_image.png')}"")
 
     pages_list = ["Home", "About Phishing", "URL Model Analysis", "FAQS", "Feedback", "Contact US"]
     page = st.sidebar.radio("GO TO", pages_list)
