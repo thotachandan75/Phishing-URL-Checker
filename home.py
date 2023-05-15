@@ -53,7 +53,7 @@ def main():
             st.warning(warning_message)
             
     with columns[1]:
-        st.image("")
+        st.image(f"data:image/png; base64,{image_to_bytes('home/spoofing.png')})
     
     st.write("Spoofed websites are fake websites that are designed to mimic the appearance and functionality of a legitimate website. These websites are created by cybercriminals with the intention of stealing personal information, such as login credentials, credit card numbers, and other sensitive data from unsuspecting users.")
     st.write("Spoofed websites are often used in phishing attacks, where users receive emails or other messages that direct them to the fake website. The email or message may contain a link that appears to be legitimate, but actually leads to the fake website. Once the user visits the spoofed website, they are prompted to enter their login credentials or other personal information, which is then captured by the attackers.")
