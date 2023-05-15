@@ -65,6 +65,6 @@ def main(website):
     mode = statistics.mode(values)
 
     if mode == 1:
-        return "phishing"
+        return "Phishing"
     elif mode == 0:
-        return "legitimate"
+        return "Legetimate"
