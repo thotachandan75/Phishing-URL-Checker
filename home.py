@@ -23,31 +23,37 @@ def main():
     
     st.write("Welcome to our Phishing URL Checker website! With the increasing sophistication of cyber threats and the rise of phishing attacks, it has become crucial to differentiate between legitimate websites and their malicious counterparts. Our model aims to address this challenge by providing an automated solution to detect whether a given URL is legitimate or a spoofed website.")
     
-    st.write("You can use this model by typing or pasting the suspected URL in the below text input field, Please verify that tthe the complete URL of the website is typed/pasted in the input field")
+    columns = st.columns(2)
     
-    url = st.text_input("Please enter complete URL of the website to check its legitimacy")
-    if url == "":
-        pass
-    elif is_complete_url(url):
-        result = model_implementation.main(url)
-        if result == "Legetimate":
-            st.success("The Entered website is a Legetimate website")
-        else:
-            st.warning('The Entered website is used for Phishing your data')
-    else:
-        warning_message = """
-        **Warning:** The URL you entered may not be complete. 
-        Please ensure that it includes both the scheme and the network location components.
+    with columns[0]:
+        st.write("You can use this model by typing or pasting the suspected URL in the below text input field, Please verify that tthe the complete URL of the website is typed/pasted in the input field")
 
-        A complete URL consists of the following components:
-        - A URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.
-        - The scheme specifies the protocol used to access the resource on the server, and is usually followed by a colon and two forward slashes ("://").
-        - The network location specifies the domain name or IP address of the server where the resource is located, and is separated from the scheme by a forward slash ("/").
-        - To check whether a URL is complete or not, you need to ensure that it includes both the scheme and the network location. If either of these components is missing, the URL is not complete.
-        - A URL without a scheme (e.g., "www.example.com") is not complete because it is missing the scheme component.
-        - A URL without a network location (e.g., "https://") is not complete because it is missing the network location component.
-        """
-        st.warning(warning_message)
+        url = st.text_input("Please enter complete URL of the website to check its legitimacy")
+        if url == "":
+            pass
+        elif is_complete_url(url):
+            result = model_implementation.main(url)
+            if result == "Legetimate":
+                st.success("The Entered website is a Legetimate website")
+            else:
+                st.warning('The Entered website is used for Phishing your data')
+        else:
+            warning_message = """
+            **Warning:** The URL you entered may not be complete. 
+            Please ensure that it includes both the scheme and the network location components.
+
+            A complete URL consists of the following components:
+            - A URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.
+            - The scheme specifies the protocol used to access the resource on the server, and is usually followed by a colon and two forward slashes ("://").
+            - The network location specifies the domain name or IP address of the server where the resource is located, and is separated from the scheme by a forward slash ("/").
+            - To check whether a URL is complete or not, you need to ensure that it includes both the scheme and the network location. If either of these components is missing, the URL is not complete.
+            - A URL without a scheme (e.g., "www.example.com") is not complete because it is missing the scheme component.
+            - A URL without a network location (e.g., "https://") is not complete because it is missing the network location component.
+            """
+            st.warning(warning_message)
+            
+    with columns[1]:
+        st.image("")
     
     st.write("Spoofed websites are fake websites that are designed to mimic the appearance and functionality of a legitimate website. These websites are created by cybercriminals with the intention of stealing personal information, such as login credentials, credit card numbers, and other sensitive data from unsuspecting users.")
     st.write("Spoofed websites are often used in phishing attacks, where users receive emails or other messages that direct them to the fake website. The email or message may contain a link that appears to be legitimate, but actually leads to the fake website. Once the user visits the spoofed website, they are prompted to enter their login credentials or other personal information, which is then captured by the attackers.")
