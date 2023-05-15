@@ -39,10 +39,7 @@ def main():
              "building")
     st.write("")
 
-        st.image(f"data:image/png;"
-                 f"base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}",
-                 caption=None,
-                 channels="RGB")
+    st.image(f"data:image/png;base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}", caption=None, channels="RGB")
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total of "
              "20 models. this models are evaluated and results are presented below")
