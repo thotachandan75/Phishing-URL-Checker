@@ -18,18 +18,18 @@ def main():
     st.markdown(kaggle_link, unsafe_allow_html=True)
 
     st.write("")
-    st.subheader("Before Preprocessing Dataset")
-
+   
     columns = st.columns(2)
-
     with columns[0]:
+         st.subheader("Before Preprocessing Dataset")
         before_preprocess = pa.read_csv("url_model_analysis/WebsiteDatasets/phishing_before_preprocess.csv")
         st.dataframe(data=before_preprocess)
     with columns[1]:
-        st.image(f"data:image/png;"
-                 f"base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}",
-                 caption=None,
-                 channels="RGB")
+        st.subheader("After Preprocessing Dataset")
+        after_preprocess = pa.read_csv("url_model_analysis/WebsiteDatasets/phishing_after_preprocess.csv")
+        st.dataframe(data=after_preprocess.set_index("id"))
+        
+
 
     st.write("")
     st.write("Preprocessing the dataset would insure better results and less training time for building the models. "
@@ -39,20 +39,10 @@ def main():
              "building")
     st.write("")
 
-    st.subheader("After Preprocessing Dataset")
-    st.write("")
-
-    columns = st.columns(2)
-
-    with columns[0]:
         st.image(f"data:image/png;"
                  f"base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}",
                  caption=None,
                  channels="RGB")
-
-    with columns[1]:
-        after_preprocess = pa.read_csv("url_model_analysis/WebsiteDatasets/phishing_after_preprocess.csv")
-        st.dataframe(data=after_preprocess.set_index("id"))
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total of "
              "20 models. this models are evaluated and results are presented below")
