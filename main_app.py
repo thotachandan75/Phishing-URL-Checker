@@ -28,7 +28,6 @@ def main():
     st.markdown(f"<style>{page_markdown}</style>", unsafe_allow_html=True)
 
     st.sidebar.title("Phishing URL Checker")
-    st.write("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
     st.sidebar.subheader("")
 
     pages_list = ["Home", "About Phishing", "URL Model Analysis", "FAQS", "Feedback", "Contact US"]
