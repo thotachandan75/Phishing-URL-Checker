@@ -30,14 +30,15 @@ def main():
         if result == "Legetimate":
             st.success("The Entered website is a Legetimate website")
         else:
-            st.warning('The Entered website is used for Phishing your data\nA URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.')
-            st.warning('The scheme specifies the protocol used to access the resource on the server, and is usually followed by a colon and two forward slashes ("://").')
-            st.warning('The network location specifies the domain name or IP address of the server where the resource is located, and is separated from the scheme by a forward slash ("/").')
-            st.warning('To check whether a URL is complete or not, you need to ensure that it includes both the scheme and the network location. If either of these components is missing, the URL is not complete.')
-            st.warning('A URL without a scheme (e.g., "www.example.com") is not complete because it is missing the scheme component.')
-            st.warning('A URL without a network location (e.g., "https://") is not complete because it is missing the network location component.')
+            st.warning('The Entered website is used for Phishing your data')
     else:
         st.warning("The Entered URL is incomplete/wrong, please check the format of the entered URL again")
+        st.warning('A URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.')
+        st.warning('The scheme specifies the protocol used to access the resource on the server, and is usually followed by a colon and two forward slashes ("://").')
+        st.warning('The network location specifies the domain name or IP address of the server where the resource is located, and is separated from the scheme by a forward slash ("/").')
+        st.warning('To check whether a URL is complete or not, you need to ensure that it includes both the scheme and the network location. If either of these components is missing, the URL is not complete.')
+        st.warning('A URL without a scheme (e.g., "www.example.com") is not complete because it is missing the scheme component.')
+        st.warning('A URL without a network location (e.g., "https://") is not complete because it is missing the network location component.')
     
     st.write("Spoofed websites are fake websites that are designed to mimic the appearance and functionality of a legitimate website. These websites are created by cybercriminals with the intention of stealing personal information, such as login credentials, credit card numbers, and other sensitive data from unsuspecting users.")
     st.write("Spoofed websites are often used in phishing attacks, where users receive emails or other messages that direct them to the fake website. The email or message may contain a link that appears to be legitimate, but actually leads to the fake website. Once the user visits the spoofed website, they are prompted to enter their login credentials or other personal information, which is then captured by the attackers.")
