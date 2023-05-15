@@ -30,8 +30,7 @@ def main():
         if result == "Legetimate":
             st.success("The Entered website is a Legetimate website")
         else:
-            st.warning('The Entered website is used for Phishing your data')
-            st.warning('A URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.')
+            st.warning('The Entered website is used for Phishing your data\nA URL is a string of characters that provides a reference to a resource on the Internet. A complete URL consists of multiple components, including the scheme, the network location, and any additional path and query parameters.')
             st.warning('The scheme specifies the protocol used to access the resource on the server, and is usually followed by a colon and two forward slashes ("://").')
             st.warning('The network location specifies the domain name or IP address of the server where the resource is located, and is separated from the scheme by a forward slash ("/").')
             st.warning('To check whether a URL is complete or not, you need to ensure that it includes both the scheme and the network location. If either of these components is missing, the URL is not complete.')
