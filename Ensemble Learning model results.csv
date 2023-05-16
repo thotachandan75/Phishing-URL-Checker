@@ -1,0 +1,11 @@
+Model,Accuracy,Precision,Recall,F1 Score
+Random Forest,0.929,0.927,0.949,0.938
+Ensemble Bagging,0.929,0.95,0.924,0.937
+Xgboost,0.969,0.969,0.976,0.973
+Adaboost,0.932,0.938,0.943,0.94
+Cat Boost,0.961,0.957,0.975,0.966
+Gradient Boost,0.947,0.952,0.955,0.953
+Ensemble Stacking,0.942,0.944,0.954,0.949
+Voting Hard,0.93,0.943,0.933,0.938
+Voting Soft,0.93,0.95,0.925,0.937
+Ensemble Blending,0.934,0.943,0.941,0.942
