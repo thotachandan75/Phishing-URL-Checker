@@ -15,7 +15,6 @@ h3 {
 }
 
 div [data-testid="stImage"] {
-    width: 75%;
     align: center;
     margin: auto;
 }
