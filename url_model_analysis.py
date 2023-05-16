@@ -27,10 +27,6 @@ def main():
                  " can be used for model building")
     with columns[1]:
         st.image(f"data:image/png;base64,{main_app.image_to_bytes('url_model_analysis/pie.png')}")
-        
-    st.subheader("After Preprocessing Dataset")
-    after_preprocess = pa.read_csv("url_model_analysis/phishing_after_preprocess.csv")
-    st.dataframe(data=after_preprocess.set_index("id"))
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total"
              " of 20 models. this models are evaluated and results are presented below")
@@ -38,6 +34,7 @@ def main():
         st.subheader("Machine Learning Models")
 
         ml = pa.read_csv("url_model_analysis/Machine Learning model results.csv")
+        st.table(data=ml.set_index('Model'))
 
         ml_colors = ['#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
@@ -49,12 +46,11 @@ def main():
         fig.update_layout(showlegend=False)
         st.plotly_chart(fig, use_container_width=True)
 
-        st.table(data=ml.set_index('Model'))
     with columns[1]:
         st.subheader("Deep Learning Models")
 
         dl = pa.read_csv("url_model_analysis/Deep Learning model results.csv")
-
+        st.table(data=dl.set_index('Model'))
         dl_colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 
         dl_long = pa.melt(dl, id_vars=['Model'], var_name='Metric', value_name='Value')
@@ -64,8 +60,6 @@ def main():
                      color_discrete_sequence=dl_colors)
         fig.update_layout(showlegend=False)
         st.plotly_chart(fig, use_container_width=True)
-
-        st.table(data=dl.set_index('Model'))
 
     st.subheader("Ensemble Learning Models")
     columns = st.columns(2)
