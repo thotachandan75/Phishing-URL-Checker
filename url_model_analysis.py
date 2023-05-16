@@ -36,8 +36,10 @@ def main():
              "etc.. Now the preprocessed dataset consists of 28 High correlated features which can be used for model "
              "building")
     st.write("")
-
-    st.image(f"data:image/png;base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}", caption=None, channels="RGB")
+    
+    columns = st.columns(3)
+    with columns[1]:
+        st.image(f"data:image/png;base64,{main_app.image_to_bytes('url_model_analysis/WebsiteImages/after_preprocess.png')}", caption=None, channels="RGB")
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total of "
              "20 models. this models are evaluated and results are presented below")
