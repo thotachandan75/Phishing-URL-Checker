@@ -27,16 +27,10 @@ def main():
                  " can be used for model building")
     with columns[1]:
         st.image(f"data:image/png;base64,{main_app.image_to_bytes('url_model_analysis/pie.png')}")
-
-    columns = st.columns(2)
-    with columns[0]:
-        st.subheader("Before Preprocessing Dataset")
-        before_preprocess = pa.read_csv("url_model_analysis/phishing_before_preprocess.csv")
-        st.dataframe(data=before_preprocess.set_index("url"))
-    with columns[1]:
-        st.subheader("After Preprocessing Dataset")
-        after_preprocess = pa.read_csv("url_model_analysis/phishing_after_preprocess.csv")
-        st.dataframe(data=after_preprocess.set_index("id"))
+        
+    st.subheader("After Preprocessing Dataset")
+    after_preprocess = pa.read_csv("url_model_analysis/phishing_after_preprocess.csv")
+    st.dataframe(data=after_preprocess.set_index("id"))
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total"
              " of 20 models. this models are evaluated and results are presented below")
