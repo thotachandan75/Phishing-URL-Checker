@@ -30,6 +30,8 @@ def main():
 
     st.write("We have used a Machine Learning, Ensemble Learning and Deep Learning and build and trained a total"
              " of 20 models. this models are evaluated and results are presented below")
+    
+    columns = st.columns(2)
     with columns[0]:
         st.subheader("Machine Learning Models")
 
